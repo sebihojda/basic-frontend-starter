@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "serve"
+    "start": "serve src"
   },
   "devDependencies": {
     "serve": "^11.2.0"
