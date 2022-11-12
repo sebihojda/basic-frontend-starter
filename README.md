@@ -1,4 +1,4 @@
-# JSHeroes Bootcamp - Frontend track starter
+# JSHeroes Bootcamp - Frontend starter
 
 This is the basic starter for getting into frontend development. It consists of some config files (package.json, package-lock.json) and the 3 main files where we'll be writing code:
 - index.html
