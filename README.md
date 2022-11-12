@@ -7,6 +7,7 @@ This is the basic starter for getting into frontend development. It consists of 
  
 Both style and script files are already loaded in the main html file. The html file can be open directly in the browser or via a static server by running the following command in a terminal:
 ```
+npm install
 npm run start
 ```
 
@@ -40,6 +41,3 @@ Here's the complete checklist of the concepts you'll be learning while doing thi
     - DOM manipulation
     - Handling events
  - Debugging in the browser
-
-
-
