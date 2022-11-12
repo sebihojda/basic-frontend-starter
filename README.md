@@ -7,8 +7,8 @@ This is the basic starter for getting into frontend development. It consists of 
  
 Both style and script files are already loaded in the main html file. The html file can be open directly in the browser or via a static server by running the following command in a terminal:
 ```
-yarn
-yarn start
+npm install
+npm run start
 ```
 
 ## What we build
