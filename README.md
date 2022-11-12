@@ -1,14 +1,14 @@
 # JSHeroes Bootcamp - Frontend starter
 
-This is the basic starter for getting into frontend development. It consists of some config files (package.json, package-lock.json) and the 3 main files where we'll be writing code:
+This is the basic starter for getting into frontend development. It consists of some config files (package.json, package-lock.json) and a `src` folder with the 3 main files we'll be writing code in:
 - index.html
 - style.css
 - script.js
  
 Both style and script files are already loaded in the main html file. The html file can be open directly in the browser or via a static server by running the following command in a terminal:
 ```
-npm install
-npm run start
+yarn
+yarn start
 ```
 
 ## What we build
