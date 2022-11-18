@@ -20,7 +20,7 @@ If you prefer running the repo in the cloud:
 
 The goal of the bootcamp is for everyone to build a GitHub explorer web application. We'll be using the [GitHub REST API](https://docs.github.com/en/rest) to fetch data and implement the following functionality on top of this starter:
 - Build a static page with semantic HTML elements
-- Style your html tags [following this design](https://basic-frontend-starter.vercel.app/)
+- Style your html tags [following this design](https://basic-frontend-starter-4colkgz3i-jsheroes.vercel.app/)
 - Use JavaScript to dynamically insert tags into your HTML (DOM manipulation)
 - Fetch GitHub data from an external API
 - Implement search by name
