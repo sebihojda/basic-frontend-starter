@@ -49,9 +49,9 @@ Here's the complete checklist of the concepts you'll be learning while doing thi
     - Handling events
  - Debugging in the browser
 
-## GitHub API documentation
+## Useful Information
 
-### Useful GitHub links 
+### GitHub API documentation
 
 #### Get most popular repositories
 When you don't have a search term, you can use this request to get the most popular repos on GitHub.
@@ -64,3 +64,11 @@ The same request can be used to search by a term (eg: "react").
 * **Docs** : https://docs.github.com/en/rest/search#search-repositories
 * **URL** : `https://api.github.com/search/repositories?q=react`
 * **Method** : `GET`
+
+### How to setup your CodeSandbox account
+
+https://www.loom.com/share/602ac8392ad247428bd96f9b34daf512
+
+### How to create your GitHub API token
+
+https://www.loom.com/share/3ee61ca2012b45f1a560535ff4bc41ed
