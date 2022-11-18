@@ -11,11 +11,16 @@ npm install
 npm run start
 ```
 
+If you prefer running the repo in the cloud:
+
+[![Open in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/jsheroes/basic-frontend-starter/main)
+
+
 ## What we build
 
-The goal of the bootcamp is for everyone to build a GitHub explorer web application. We'll be using the GitHub API (link coming soon) to fetch data and implement the following functionality on top of this starter:
+The goal of the bootcamp is for everyone to build a GitHub explorer web application. We'll be using the [GitHub REST API](https://docs.github.com/en/rest) to fetch data and implement the following functionality on top of this starter:
 - Build a static page with semantic HTML elements
-- Style your html tags (example coming soon)
+- Style your html tags [following this design](https://basic-frontend-starter.vercel.app/)
 - Use JavaScript to dynamically insert tags into your HTML (DOM manipulation)
 - Fetch GitHub data from an external API
 - Implement search by name
@@ -43,3 +48,19 @@ Here's the complete checklist of the concepts you'll be learning while doing thi
     - DOM manipulation
     - Handling events
  - Debugging in the browser
+
+## GitHub API documentation
+
+### Useful GitHub links 
+
+#### Get most popular repositories
+When you don't have a search term, you can use this request to get the most popular repos on GitHub.
+* **Docs** : https://docs.github.com/en/rest/search#search-repositories
+* **URL** : `https://api.github.com/search/repositories?q=stars:>10000"`
+* **Method** : `GET`
+
+#### Search repositories
+The same request can be used to search by a term (eg: "react").
+* **Docs** : https://docs.github.com/en/rest/search#search-repositories
+* **URL** : `https://api.github.com/search/repositories?q=react`
+* **Method** : `GET`
