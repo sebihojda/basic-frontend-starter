@@ -35,6 +35,8 @@ Here's the complete checklist of the concepts you'll be learning while doing thi
     - Resetting browser styles
     - Box model & positioning
     - Pseudo selectors (:hover)
+    - Layout (flex, grid)
+    - Custom fonts
  - Scripting
     - String templates
     - Fetch API & Promises
