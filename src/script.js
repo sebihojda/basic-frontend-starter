@@ -36,16 +36,33 @@ const repositories = [
   },
 ];
 
-function createRepositoryCard() {
+const temp = document.querySelector("[data-repo-template]");
+const lista = document.querySelector("[data-repo-lists]");
+
+function createRepositoryCard(repository) {
   // Implement string template HTML builder for repo card
+  const clone = temp.content.cloneNode(true);
+  const data_header = clone.querySelector("[data-header]");
+  const data_description = clone.querySelector("[data-description]");
+  const data_stars = clone.querySelector("[data-stars]");
+  const data_forks = clone.querySelector("[data-forks]");
+  data_header.textContent = repository.full_name;
+  data_description.textContent = repository.description;
+  data_stars.textContent += repository.stargazers_count;
+  data_forks.textContent += repository.forks;
+  lista.appendChild(clone);
 }
 
-function renderRepositories() {
+function renderRepositories(repos) {
   // Implement DOM manipulation function to add list items in the repo list
+  //repos.map(function (repository) {
+  //  createRepositoryCard(repository);
+  //});
+  repos.map((repository) => createRepositoryCard(repository));
 }
 
 // Comment this out when you start working on the search functionality
-renderRepositories();
+// renderRepositories();
 
 function handleSearch() {
   // Implement form submit event handler
@@ -53,7 +70,15 @@ function handleSearch() {
 
 async function fetchRepositories() {
   // Pass parameter to the search endpoint
-  return fetch("https://api.github.com/legacy/repos/search/<placeholder>")
+  return fetch(" https://api.github.com/search/repositories?q=stars:>10000", {
+    headers: {
+      Authorization: "Bearer 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",
+    },
+  })
     .then((res) => res.json())
-    .then((res) => res.repositories);
+    .then((res) => {
+      var repositories = res.items;
+      renderRepositories(repositories);
+    });
 }
+fetchRepositories();
